@@ -47,7 +47,7 @@ I ended up creating a new PlatformIO arduino project, with the board ESP-07s.
 Then copied the code from the main INO file into main.cpp, and copied the Growatt.cpp, Growatt.h and index.h into the src folder.
 (Importing an arduino project in proalformIO didn't work for me)
 
-* Open the old ino file and update WIFI_SSID, WIFI_PASSWORD, and the other variables in the first part of the sketch.
+* You could open the main.cpp file and update WIFI_SSID, WIFI_PASSWORD, and the other variables in the first part of the sketch, but I did it different below.
 * Add the PubSubClient by Nick O'Leary library to the project if needed. (see github link if you hit packet size issues).
 * Add the ModBusMaster library to the project as well.
 * If you get errors about SendJsonSite or other subs not being defined, make sure you reorganize the main.cpp, 
