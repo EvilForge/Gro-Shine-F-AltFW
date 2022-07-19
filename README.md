@@ -16,7 +16,7 @@ LOTS of respect to the guy that created this originally.. https://github.com/ott
 * Plug in the interface and power the board (if your interface isnt doing it).
 * Open a cmd prompt to your extraced esptool folder, run the following command (I use windows terminal):
 
-` .\esptool.exe --port COM4 read_flash 0x00000 0x400000 image4M.bin
+`.\esptool.exe --port COM4 read_flash 0x00000 0x400000 image4M.bin
 
 Response from utility:
 esptool.py v4.1
@@ -35,7 +35,7 @@ Stub running...
 4194304 (100 %)
 4194304 (100 %)
 Read 4194304 bytes at 0x00000000 in 389.7 seconds (86.1 kbit/s)...
-Hard resetting via RTS pin... `
+Hard resetting via RTS pin...`
 
 Move the image4M.bin file somewhere safe.
 By the way, my file size is 4096KiB, the CRC for my file is CRC32: CRC32: D77C2455
@@ -59,7 +59,7 @@ I prefer to keep wifi secrets in a secrets.h file, and specifically exclude secr
  replace the old code with a 'include "secrets.h"' in main.cpp, and add secrets.h to a line in .gitignore. Then you can update the
  secrets.h file with your WIFI_SSID, WIFI_PASSWORD, etc..)
 
-https://assets.maxlinear.com/web/documents/sipex/datasheets/sp3222e_sp3232e.pdf
-https://docs.ai-thinker.com/_media/esp8266/docs/esp-07s_product_specification_en.pdf
-https://github.com/knolleary/pubsubclient
-https://www.photovoltaicsolar.in/Growatt_Manual/MAX%20Series%20Modbus%20RTU%20Protocol.pdf
+* https://assets.maxlinear.com/web/documents/sipex/datasheets/sp3222e_sp3232e.pdf
+* https://docs.ai-thinker.com/_media/esp8266/docs/esp-07s_product_specification_en.pdf
+* https://github.com/knolleary/pubsubclient
+* https://www.photovoltaicsolar.in/Growatt_Manual/MAX%20Series%20Modbus%20RTU%20Protocol.pdf
