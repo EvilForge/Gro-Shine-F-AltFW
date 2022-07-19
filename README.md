@@ -19,7 +19,6 @@ LOTS of respect to the guy that created this originally.. https://github.com/ott
 ```
 .\esptool.exe --port COM4 read_flash 0x00000 0x400000 image4M.bin
 
-Response from utility:
 esptool.py v4.1
 Serial port COM4
 Connecting....
