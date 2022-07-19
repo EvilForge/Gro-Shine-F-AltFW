@@ -45,14 +45,14 @@ By the way, my file size is 4096KiB, the CRC for my file is CRC32: CRC32: D77C24
 
 I ended up creating a new PlatformIO arduino project, with the board ESP-07s.
 Then copied the code from the main INO file into main.cpp, and copied the Growatt.cpp, Growatt.h and index.h into the src folder.
-(Importing an arduino project in proalformIO didn't work for me)
+(Importing an arduino project in PlatformIO didn't work well for me)
 
 * You could open the main.cpp file and update WIFI_SSID, WIFI_PASSWORD, and the other variables in the first part of the sketch, but I did it different below.
 * Add the PubSubClient by Nick O'Leary library to the project if needed. (see github link if you hit packet size issues).
 * Add the ModBusMaster library to the project as well.
 * If you get errors about SendJsonSite or other subs not being defined, make sure you reorganize the main.cpp, 
  putting the main loop() section below all the other procedures (might need to move setup() just above loop() as well).
- This is common when migrating adruino to platformIO actually..
+ This is common when migrating adruino to PlatformIO actually..
 * Compile, fix errors if any are found.. 
 
 I prefer to keep wifi secrets in a secrets.h file, and specifically exclude secrets.h in .gitignore so my creds never get published.
