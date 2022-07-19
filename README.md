@@ -3,6 +3,7 @@ My work on a Growatt ShineWifi-F version firmware update. Tested against a SPF 3
 
 LOTS of respect to the guy that created this originally.. https://github.com/otti/Growatt_ShineWiFi-S (and of course, all the repos he used to create his work)
 
+## Heading 2 ##
 How I backed up and updated the device:
 (Win11 based ShineWifi-F firmware dump and update)
 
