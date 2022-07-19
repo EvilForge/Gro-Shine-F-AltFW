@@ -3,7 +3,7 @@ My work on a Growatt ShineWifi-F version firmware update. Tested against a SPF 3
 
 LOTS of respect to the guy that created this originally.. https://github.com/otti/Growatt_ShineWiFi-S (and of course, all the repos he used to create his work)
 
-##How I backed up and updated the device:##
+## How I backed up and updated the device: ##
 (Win11 based ShineWifi-F firmware dump and update)
 
 * I downloaded 'esptool-v4.1-win64' and extracted it to a folder.
@@ -16,7 +16,7 @@ LOTS of respect to the guy that created this originally.. https://github.com/ott
 * Plug in the interface and power the board (if your interface isnt doing it).
 * Open a cmd prompt to your extraced esptool folder, run the following command (I use windows terminal):
 
-`.\esptool.exe --port COM4 read_flash 0x00000 0x400000 image4M.bin
+` .\esptool.exe --port COM4 read_flash 0x00000 0x400000 image4M.bin
 
 Response from utility:
 esptool.py v4.1
@@ -35,12 +35,12 @@ Stub running...
 4194304 (100 %)
 4194304 (100 %)
 Read 4194304 bytes at 0x00000000 in 389.7 seconds (86.1 kbit/s)...
-Hard resetting via RTS pin...`
+Hard resetting via RTS pin... `
 
 Move the image4M.bin file somewhere safe.
 By the way, my file size is 4096KiB, the CRC for my file is CRC32: CRC32: D77C2455
 
-##Working with the code:##
+## Working with the code: ##
 
 I ended up creating a new PlatformIO arduino project, with the board ESP-07s.
 Then copied the code from the main INO file into main.cpp, and copied the Growatt.cpp, Growatt.h and index.h into the src folder.
