@@ -16,7 +16,8 @@ LOTS of respect to the guy that created this originally.. https://github.com/ott
 * Plug in the interface and power the board (if your interface isnt doing it).
 * Open a cmd prompt to your extraced esptool folder, run the following command (I use windows terminal):
 
-`.\esptool.exe --port COM4 read_flash 0x00000 0x400000 image4M.bin
+```
+.\esptool.exe --port COM4 read_flash 0x00000 0x400000 image4M.bin
 
 Response from utility:
 esptool.py v4.1
@@ -35,7 +36,8 @@ Stub running...
 4194304 (100 %)
 4194304 (100 %)
 Read 4194304 bytes at 0x00000000 in 389.7 seconds (86.1 kbit/s)...
-Hard resetting via RTS pin...`
+Hard resetting via RTS pin...
+```
 
 Move the image4M.bin file somewhere safe.
 By the way, my file size is 4096KiB, the CRC for my file is CRC32: CRC32: D77C2455
