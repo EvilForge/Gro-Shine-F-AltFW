@@ -4,7 +4,7 @@ My work on a Growatt ShineWifi-F version firmware update. Tested against a SPF 3
 LOTS of respect to the guy that created this originally.. https://github.com/otti/Growatt_ShineWiFi-S (and of course, all the repos he used to create his work)
 
 --UPDATE--
-I use ESPHome on the ShineWIfi-F device and the growattinverter.yaml file for the config. Works well! But I left all this in case someone wants it..although it didn't work when I flashed it this time? But I can't devote time to debugging, since i only have one device and it's working with ESPHome.
+I use ESPHome on the ShineWIfi-F device and the growattinverter.yaml file for the config. Works well! But I left all this in case someone wants it..although it didn't work when I flashed it recently as a test? Unfortunately I can't devote time to debugging, since I only have one device and it's working with ESPHome.
 --UPDATE--
 
 ## How I backed up and updated the device: ##
